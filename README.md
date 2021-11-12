@@ -1,6 +1,6 @@
 ![Banner](https://raw.githubusercontent.com/otonalmeidas/myportfolio/master/public/banner.png)
 
-# Wellington de Almeida
+# Ton Almeida – Front-End Developer
 
 > [Acessar site](http://www.wellingtondas.com)
 
