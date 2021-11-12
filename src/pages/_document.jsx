@@ -12,7 +12,7 @@ export default class MyDocument extends Document {
           <meta name="msvalidate.01" content="09F183CE40D2E8D217A75D96699C204D" />
           <meta name='description' content='Desenvolvedor Front-End, entusiasta de ReactJS e apaixonado por UI/UX Design.' />
           <meta name='keywords' content='desenvolvedor, developer, frontend, react, html, css, javascript, programador, responsive, seo, design, ux/ui, ton, almeida' />
-          <meta property='og:image' content='https://raw.githubusercontent.com/otonalmeidas/myportfolio/master/public/ogimage.png' />
+          <meta property='og:image' content='https://raw.githubusercontent.com/otonalmeidas/myportfolio/master/public/ogimage.webp' />
           <meta property='og:type' content='page' />
           <meta property='og:locale' content='pt_BR' />
           <meta property='og:url' content='https://www.wellingtondas.com' />
