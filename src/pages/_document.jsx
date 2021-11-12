@@ -8,16 +8,11 @@ export default class MyDocument extends Document {
           <meta httpEquiv='cache-control' content='public' />
           <meta name='language' content='pt-BR' />
           <meta name='author' content='Ton Almeida' />
-          {/*
-          Google Sites Verification
-          <meta name='google-site-verification' content='' />
-          Compartilhamento
-          <meta property='og:image' content='' />
-          Bing Verification
-          <meta name='msvalidate.01' content='' />
-          */}
+          <meta name='google-site-verification' content='OKClghwYRK1vxZ8ZiFl3cLGJJlTKgwJHv1aQkuUA5x8' />
+          <meta name='msvalidate.01' content='google-site-verification=OKClghwYRK1vxZ8ZiFl3cLGJJlTKgwJHv1aQkuUA5x8' />
           <meta name='description' content='Desenvolvedor Front-End, entusiasta de ReactJS e apaixonado por UI/UX Design.' />
           <meta name='keywords' content='desenvolvedor, developer, frontend, react, html, css, javascript, programador, responsive, seo, design, ux/ui, ton, almeida' />
+          <meta property='og:image' content='https://raw.githubusercontent.com/otonalmeidas/myportfolio/master/public/ogimage.png' />
           <meta property='og:type' content='page' />
           <meta property='og:locale' content='pt_BR' />
           <meta property='og:url' content='https://www.wellingtondas.com' />
