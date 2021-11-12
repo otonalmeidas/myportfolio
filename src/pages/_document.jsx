@@ -9,7 +9,7 @@ export default class MyDocument extends Document {
           <meta name='language' content='pt-BR' />
           <meta name='author' content='Ton Almeida' />
           <meta name='google-site-verification' content='OKClghwYRK1vxZ8ZiFl3cLGJJlTKgwJHv1aQkuUA5x8' />
-          <meta name='msvalidate.01' content='google-site-verification=OKClghwYRK1vxZ8ZiFl3cLGJJlTKgwJHv1aQkuUA5x8' />
+          <meta name="msvalidate.01" content="09F183CE40D2E8D217A75D96699C204D" />
           <meta name='description' content='Desenvolvedor Front-End, entusiasta de ReactJS e apaixonado por UI/UX Design.' />
           <meta name='keywords' content='desenvolvedor, developer, frontend, react, html, css, javascript, programador, responsive, seo, design, ux/ui, ton, almeida' />
           <meta property='og:image' content='https://raw.githubusercontent.com/otonalmeidas/myportfolio/master/public/ogimage.png' />
