@@ -1,4 +1,4 @@
-![Banner](https://raw.githubusercontent.com/otonalmeidas/myportfolio/master/public/banner.png)
+![Banner](https://raw.githubusercontent.com/otonalmeidas/myportfolio/master/public/banner.webp)
 
 ## Ton Almeida – Front-End Developer
 
