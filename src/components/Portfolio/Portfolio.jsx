@@ -53,7 +53,7 @@ export function Portfolio() {
           <FaWikipediaW />
         </CardMini>
         <CardMini link="/" title="Meu site" tag="Especial">
-          <img src="favicon.png" alt="Logo" />
+          <img src="favicon.webp" alt="Logo" />
         </CardMini>
       </div>
     </section>

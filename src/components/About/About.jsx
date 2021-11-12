@@ -16,7 +16,7 @@ export function About() {
         <Link href="https://www.instagram.com/otonalmeidas/">
           <a className={styles.about__photo} target="_blank" rel="noopener noreferrer" title="Foto de Ton Almeida">
             <img
-              src="perfil.png"
+              src="perfil.webp"
               alt="Foto de Wellington"
             />
             <FaInstagram />

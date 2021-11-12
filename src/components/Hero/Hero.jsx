@@ -23,7 +23,7 @@ export function Hero() {
         <div className={styles.hero__footer}>
           <img
             alt="Scroll"
-            src="/scroll.png"
+            src="/scroll.webp"
             className={styles.hero__scroll}
           />
           <div className={styles.hero__texts}>
