@@ -14,7 +14,7 @@ export function About() {
     <section className={styles.about} id="sobre">
       <div className={styles.about__left}>
         <Link href="https://www.instagram.com/otonalmeidas/">
-          <a className={styles.about__photo} target="_blank" rel="noopener noreferrer" title="Foto do Instagram">
+          <a className={styles.about__photo} target="_blank" rel="noopener noreferrer" title="Foto de Ton Almeida">
             <img
               src="perfil.png"
               alt="Foto de Wellington"
