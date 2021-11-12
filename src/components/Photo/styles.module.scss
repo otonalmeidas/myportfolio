@@ -1,0 +1,44 @@
+@keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.image {
+  z-index: -2;
+  top: 0;
+  left: 0;
+  right: 18%;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  justify-content: center;
+
+  img {
+    height: 100%;
+    object-fit: cover;
+    user-select: none;
+    position: relative;
+    filter: saturate(0);
+    pointer-events: none;
+    animation: FadeIn 1s linear;
+  }
+
+  @media (max-width: 767px) {
+    img {
+      left: 10%;
+    }
+  }
+
+  @media (max-width: 539px) {
+    img {
+      left: 30%;
+    }
+  }
+}

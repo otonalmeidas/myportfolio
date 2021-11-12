@@ -1,0 +1,35 @@
+.nav {
+  display: flex;
+
+  &__menu {
+    gap: 0.5rem;
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 539px) {
+      gap: 0.5rem;
+    }
+  }
+
+  &__item {
+    display: flex;
+  }
+
+  &__link {
+    font-weight: 300;
+    font-size: 0.625rem;
+    line-height: 1.75rem;
+    letter-spacing: 0.225rem;
+    text-transform: uppercase;
+
+    &:hover {
+      text-decoration: line-through;
+    }
+  }
+
+  &__bar {
+    font-weight: 300;
+    user-select: none;
+    font-size: 0.6rem;
+  }
+}

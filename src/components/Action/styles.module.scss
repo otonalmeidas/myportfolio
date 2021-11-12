@@ -1,0 +1,24 @@
+.action {
+  display: flex;
+  padding-top: 5rem;
+  flex-direction: column;
+
+  &__grid {
+    gap: 3rem;
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr 3fr;
+  }
+
+  @media (max-width: 767px) {
+    padding-top: 5rem;
+
+    &__grid {
+      grid-template-columns: 1fr;
+
+      > div:first-child {
+        display: none;
+      }
+    }
+  }
+}

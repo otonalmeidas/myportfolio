@@ -1,0 +1,90 @@
+.header {
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+
+  &__content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    > a {
+      font-size: 40px;
+      cursor: pointer;
+      width: fit-content;
+      pointer-events: inherit;
+      transition: 200ms ease-in-out;
+
+      @media (max-width: 539px) {
+        font-size: 45px;
+      }
+    }
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  &__contact {
+    font-weight: 300;
+    font-size: 0.625rem;
+    line-height: 1.75rem;
+    margin-right: 1.5rem;
+    letter-spacing: 0.2rem;
+    transition: 150ms ease-in-out;
+
+    &:hover {
+      letter-spacing: 0.215rem;
+    }
+
+    @media (max-width: 539px) {
+      display: none;
+    }
+  }
+
+  &__message {
+    width: 36px;
+    height: 36px;
+    outline: none;
+    display: flex;
+    cursor: pointer;
+    border-radius: 50%;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: 2px solid var(--yellow);
+
+    svg {
+      height: 1rem;
+      color: var(--yellow);
+    }
+
+    @media (max-width: 539px) {
+      width: 42px;
+      height: 42px;
+
+      svg {
+        height: 1.375rem;
+      }
+    }
+  }
+
+  &__notifying,
+  &__notified {
+    top: -2px;
+    right: -2px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: var(--red);
+  }
+
+  &__notified {
+    display: none;
+  }
+}

@@ -1,0 +1,22 @@
+@keyframes Invisible {
+  to {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+
+.loading {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+
+  animation: Invisible 200ms;
+  animation-delay: 2.5s;
+  animation-fill-mode: forwards;
+}

@@ -1,0 +1,33 @@
+.name {
+  width: 100%;
+  display: flex;
+  position: relative;
+  margin-bottom: 1rem;
+  justify-content: space-between;
+
+  &__complete {
+    display: none;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: calc(min(3rem, 8.3vw));
+    letter-spacing: calc(min(3.3rem, 7.18vw));
+  }
+
+  &__letter {
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  @media (max-width: 539px) {
+    margin-bottom: 0.375rem;
+
+    &__complete {
+      display: block;
+    }
+
+    &__letter {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,72 @@
+@keyframes Spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#nprogress {
+  pointer-events: none;
+
+  .bar {
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1031;
+    position: fixed;
+    height: 0.125rem;
+    background: var(--sonic);
+  }
+
+  .peg {
+    right: 0px;
+    opacity: 1;
+    height: 100%;
+    width: 6.25rem;
+    display: block;
+    position: absolute;
+    transform: rotate(3deg) translate(0, 0.25rem);
+  }
+
+  .spinner {
+    right: 2rem;
+    bottom: 2rem;
+    z-index: 1031;
+    display: block;
+    position: fixed;
+
+    @media (max-width: 1080px) {
+      bottom: 7rem;
+    }
+
+    @media (max-width: 539px) {
+      bottom: 6rem;
+      right: 1.5rem;
+    }
+  }
+
+  .spinner-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: solid 2px transparent;
+    border-top-color: var(--sonic);
+    border-left-color: var(--sonic);
+    animation: Spinner 400ms linear infinite;
+  }
+}
+
+.nprogress-custom-parent {
+  overflow: hidden;
+  position: relative;
+
+  #nprogress {
+    .bar,
+    .spinner {
+      position: absolute;
+    }
+  }
+}

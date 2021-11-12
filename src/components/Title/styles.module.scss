@@ -1,0 +1,48 @@
+.title {
+  display: flex;
+  margin-bottom: 2rem;
+  flex-direction: column;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  &__line {
+    width: 15%;
+    height: 1px;
+    margin-right: 1rem;
+    background: var(--white);
+    background: linear-gradient(
+      90deg,
+      rgba(245, 245, 245, 1) 0%,
+      transparent 100%
+    );
+  }
+
+  &__number {
+    font-weight: 300;
+    user-select: none;
+    font-size: 0.875rem;
+    letter-spacing: 2px;
+    pointer-events: none;
+  }
+
+  &__title {
+    width: 100%;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: calc(min(1.143rem, 5.715vw));
+    letter-spacing: calc(min(1.125rem, 1.625vw));
+  }
+
+  &__subtitle {
+    font-weight: 300;
+    font-size: 0.625rem;
+    line-height: 1.75rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.225rem;
+    text-transform: uppercase;
+  }
+}

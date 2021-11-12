@@ -1,0 +1,13 @@
+.office {
+  width: 100%;
+  font-weight: 400;
+  text-align: center;
+  position: relative;
+  text-transform: uppercase;
+  font-size: calc(min(1.143rem, 5.715vw));
+  letter-spacing: calc(min(1.125rem, 1.625vw));
+
+  @media (max-width: 539px) {
+    text-align: start;
+  }
+}

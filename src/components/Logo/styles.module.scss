@@ -1,0 +1,103 @@
+$red: rgb(238, 24, 24);
+$blue: rgb(3, 59, 162);
+$green: rgb(38, 169, 108);
+
+$ared: rgba(238, 24, 24, 0.75);
+$ablue: rgba(3, 59, 162, 0.75);
+$agreen: rgba(38, 169, 108, 0.75);
+
+@keyframes Glitch {
+  0% {
+    text-shadow: 0.1rem 0 0 $ared, -0.05rem -0.1rem 0 $agreen,
+      0.05rem 0.1rem 0 $ablue;
+  }
+
+  14% {
+    text-shadow: 0.1rem 0 0 $ared, -0.05rem -0.1rem 0 $agreen,
+      0.05rem 0.1rem 0 $ablue;
+  }
+
+  15% {
+    text-shadow: -0.1rem -0.05rem 0 $ared, 0.05rem 0.05rem 0 $agreen,
+      -0.1rem -0.1rem 0 $ablue;
+  }
+
+  49% {
+    text-shadow: -0.1rem -0.05rem 0 $ared, 0.05rem 0.05rem 0 $agreen,
+      -0.1rem -0.1rem 0 $ablue;
+  }
+
+  50% {
+    text-shadow: 0.05rem 0.1rem 0 $ared, -0.1rem 0 0 $agreen, 0 -0.1rem 0 $ablue;
+  }
+
+  99% {
+    text-shadow: 0.05rem 0.1rem 0 $ared, -0.1rem 0 0 $agreen, 0 -0.1rem 0 $ablue;
+  }
+
+  100% {
+    text-shadow: 0.05rem 0 0 $ared, -0.05rem -0.05rem 0 $agreen,
+      -0.05rem -0.1rem 0 $ablue;
+  }
+}
+
+@keyframes GlitchTop {
+  2%,
+  64% {
+    transform: translate(-1px, -1px);
+  }
+  4%,
+  60% {
+    transform: translate(-1px, 1px);
+  }
+  62% {
+    transform: translate(13px, -1px) skew(-13deg);
+  }
+}
+
+@keyframes GlitchBottom {
+  2%,
+  64% {
+    transform: translate(-2px, 0);
+  }
+  4%,
+  60% {
+    transform: translate(-2px, 0);
+  }
+  62% {
+    transform: translate(-22px, 5px) skew(21deg);
+  }
+}
+
+.logo {
+  font-size: 48px;
+  color: #f5f5f5;
+  font-weight: 400;
+  user-select: none;
+  position: relative;
+  pointer-events: none;
+  font-family: "Reenie Beanie", cursive;
+  text-shadow: 0.07rem 0 0 $red, -0.03rem -0.07rem 0 $green,
+    0.03rem 0.07rem 0 $blue;
+
+  animation: Glitch 2s infinite;
+
+  &__text {
+    top: 0;
+    left: 0;
+    color: #fff;
+    position: absolute;
+
+    &:first-child {
+      opacity: 0.8;
+      animation: GlitchTop 1.5s linear infinite;
+      clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+    }
+
+    &:last-child {
+      opacity: 0.8;
+      animation: GlitchBottom 1.5s linear infinite;
+      clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+    }
+  }
+}

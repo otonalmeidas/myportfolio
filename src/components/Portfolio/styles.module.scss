@@ -1,0 +1,63 @@
+.portfolio {
+  gap: 1rem;
+  display: flex;
+  padding-top: 10rem;
+  flex-direction: column;
+
+  &__grid {
+    gap: 3rem;
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr 3fr;
+  }
+
+  &__jobs,
+  &__specials {
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    @media (max-width: 1024px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (max-width: 767px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    &__jobs,
+    &__specials {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media (max-width: 767px) {
+    padding-top: 5rem;
+
+    &__grid {
+      grid-template-columns: 1fr;
+
+      > div:first-child {
+        display: none;
+      }
+    }
+
+    &__jobs,
+    &__specials {
+      display: flex;
+      overflow: scroll;
+      padding-bottom: 0.5rem;
+
+      &::-webkit-scrollbar {
+        width: 0;
+        height: 3px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background: transparent;
+      }
+    }
+  }
+}

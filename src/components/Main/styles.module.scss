@@ -1,0 +1,25 @@
+.main {
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  padding: 0 5rem;
+  max-width: 80rem;
+  min-height: 100vh;
+  flex-direction: column;
+
+  @media (max-width: 1746px) {
+    max-width: 75rem;
+  }
+
+  @media (max-width: 1536px) {
+    max-width: 70rem;
+  }
+
+  @media (max-width: 539px) {
+    padding: 2rem;
+  }
+
+  @media (max-width: 300px) {
+    padding: 1.5rem;
+  }
+}
