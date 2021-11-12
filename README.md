@@ -1,4 +1,4 @@
-![Banner]()
+![Banner](https://raw.githubusercontent.com/otonalmeidas/myportfolio/master/public/banner.png)
 
 # Wellington de Almeida
 
