@@ -4,14 +4,16 @@ import { Card } from '../Card/Card'
 
 import {
   IoLogoSass,
+  IoLogoCss3,
   IoLogoFigma,
   IoLogoReact,
   IoLogoFirebase,
+  IoLogoHtml5,
   IoLogoApple,
   IoLogoGoogle,
   IoLogoDiscord
 } from 'react-icons/io5'
-import { SiRedux, SiTailwindcss } from 'react-icons/si'
+import { SiTailwindcss } from 'react-icons/si'
 import { FaWikipediaW } from 'react-icons/fa'
 
 import styles from './styles.module.scss'
@@ -34,7 +36,7 @@ export function Portfolio() {
           <SiTailwindcss /><IoLogoReact /><IoLogoFigma />
         </Card>
         <Card link="/" title="Ecoleta" paragraph="Um site que visa unir pessoas e empresas afim criar pontos de coleta.">
-          <IoLogoSass /><IoLogoReact /><IoLogoFirebase />
+          <IoLogoHtml5 /><IoLogoCss3 />
         </Card>
       </div>
       <div className={styles.portfolio__specials}>

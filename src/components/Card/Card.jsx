@@ -8,6 +8,7 @@ export function Card(props) {
   return (
     <Link href={props.link}>
       <a className={styles.card} target="_blank" rel="noopener noreferrer">
+        <span className={styles.card__alert}>Indisponível</span>
         <div className={styles.card__logos}>
           {props.children}
         </div>

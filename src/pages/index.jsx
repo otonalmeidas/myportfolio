@@ -22,7 +22,7 @@ export default function Home() {
     <Fragment>
       <Head>
         <meta name='robots' content='index, follow' />
-        <title>Ton Almeida - Front-End Developer</title>
+        <title>Ton Almeida – Front-End Developer</title>
       </Head>
       {
         loading
